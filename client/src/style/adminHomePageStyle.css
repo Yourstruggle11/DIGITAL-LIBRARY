@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+.admin{
+    width: 100VW;
+    height: 100vh;
+    background: #F9F9F9;
+    display:grid;
+    place-items: center;
+    overflow: hidden;
+}
+.admin .mainBody{
+    width: 97.6rem;
+    height: 54.9rem;
+    background: #E3BE98;
+    border-radius: 1rem;
+    position: relative;
+    top: 3.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin .mainBody .greeting{
+    position: absolute;
+    top: 1.3rem;
+    left: 4.8rem;
+    font-family: 'Poppins', sans-serif
+}
+.admin .mainBody .dashboard{
+    width: 34.8rem;
+    height: 35.7rem;
+    background: #C9DCEE;
+    border-radius: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-right:5.4rem;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.295);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .admin .mainBody .dashboard img{
+     width: 20.5rem;
+     height: 19.6rem;
+     margin-bottom: 4.3rem;
+ }
+ .admin .mainBody .dashboard button{
+     width: 23.841rem;
+     height: 5rem;
+     border: none;
+     outline: none;
+     background: linear-gradient(120deg, #15AAD9,#15abd96e);
+     box-shadow: 0 1rem 2rem #31b3de77;
+     color: #F6F6F6;
+     font-size: 2rem;
+     border-radius: 1rem;
+     cursor: pointer;
+ }
+ .admin .mainBody .upload{
+    width: 34.8rem;
+    height: 35.7rem;
+    background: #B5EAEA;
+    border-radius: 2rem;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.295);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .admin .mainBody .upload img{
+    width: 23.9rem;
+    height: 18.2rem;
+    margin-bottom: 3.7rem;
+}
+.admin .mainBody .upload button{
+    width: 17.1rem;
+    height: 5rem;
+    border: none;
+    outline: none;
+    background: linear-gradient(120deg, #15AAD9,#15abd96e);
+    box-shadow: 0 1rem 2rem #31b3de77;
+    color: #F6F6F6;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+ button:hover{
+    position: relative;
+    top: 0.5rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+
+    .admin .mainBody{
+        width: 57.6rem;
+        height: 87rem;
+        background: #E3BE98;
+        border-radius: 1rem;
+        position: relative;
+        top: 3.8rem;
+        box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: auto;
+        padding: 2rem;
+    }
+    .admin .mainBody::-webkit-scrollbar{
+        width: 0rem;
+    }
+
+    .admin .mainBody .dashboard{
+        width: 34.8rem;
+        height: 35.7rem;
+        background: #C9DCEE;
+        border-radius: 2rem;
+        font-family: 'Poppins', sans-serif;
+        margin-right:5.4rem;
+        box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.295);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        margin: auto;
+     }
+    
+
+}

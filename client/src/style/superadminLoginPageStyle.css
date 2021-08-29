@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+.superadminLogin{
+    width: 100VW;
+    height: 100vh;
+    background: #F9F9F9;
+    display:grid;
+    place-items: center;
+    overflow: hidden;
+}
+.superadminLogin .mainBody{
+    width: 97.6rem;
+    height: 54.9rem;
+    background: #FFFFFF;
+    border-radius: 1rem;
+    position: relative;
+    top: 3.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.superadminLogin .mainBody .rightSide{ 
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(#CB1C1C, #15AAD9);
+    display: grid;
+    place-items: center;
+    border-radius: 0 1rem 1rem 0;
+}
+.superadminLogin .mainBody .rightSide .circleOne{
+    width: 41.9rem;
+    height: 41.9rem;
+    border-radius: 100%;
+    background: #81ddfc46;
+    display: grid;
+    place-items: center;
+ }
+ .superadminLogin .mainBody .rightSide .circleOne .circleTwo{
+    width: 31.2rem;
+    height: 31.2rem;
+    border-radius: 100%;
+    background: #be272954;
+    display: grid;
+    place-items: center;
+ }
+ .superadminLogin .mainBody .rightSide .circleOne .circleTwo img{
+     width: 34.3rem;
+     height: 22.9rem;
+     position: relative;
+     left: -2rem;
+ }
+ .superadminLogin .mainBody .leftSide{
+    width: 50%;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1rem 0 0 1rem;
+}
+.superadminLogin .mainBody .leftSide .header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ } 
+ .superadminLogin .mainBody .leftSide .buttons{
+     width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .superadminLogin .mainBody .leftSide .body{
+    width: 100%;
+    position: relative;
+    top: 3.7rem;
+
+ }
+ .superadminLogin .mainBody .leftSide .body .inputArea{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+   .superadminLogin .mainBody .leftSide .body .inputArea .email{
+    width: 3.2rem;
+    position: absolute;
+    right: 3rem;
+}
+.superadminLogin .mainBody .leftSide .body .inputArea .password{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 3rem;
+    top: 6.4rem;
+
+}
+  .superadminLogin .mainBody .leftSide .body .inputArea input{
+    margin-bottom: 3.4rem;
+    height: 3.7rem;
+    border: none;
+    outline: none;
+    border-bottom: 0.1rem solid #C9A3AA;
+  }
+
+  .superadminLogin .mainBody .leftSide .body .inputArea .emailInput::placeholder{
+    color: #C9A3AA;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+  }
+  .superadminLogin .mainBody .leftSide .body .inputArea .passwordInput::placeholder{
+    color: #B9B9B9;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+  }
+  .superadminLogin .mainBody .leftSide .buttom{
+      margin:auto;
+      text-align: center;
+      position: relative;
+      top: 3.7rem;
+  }
+  .superadminLogin .mainBody .leftSide .buttom button{
+    width: 40.2rem;
+    height: 6.8rem;
+    border-radius: 1rem;
+    background: linear-gradient(120deg, #C9A3AA, #15abd96b);
+    border: none;
+    outline: none;
+    box-shadow: 0 1rem 2rem #31b3de7a;
+    color: #F6F6F6;
+    font-size: 2rem;
+    transition: all 0.5s;
+  }
+  .superadminLogin .mainBody .leftSide .buttom button:hover{
+    position: relative;
+    top: 0.5rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+
+    .superadminLogin .mainBody{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .superadminLogin .mainBody .rightSide{
+        display: none;
+    }
+}

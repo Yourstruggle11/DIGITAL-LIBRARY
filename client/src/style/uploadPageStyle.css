@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+.upload{
+    width: 100VW;
+    height: 100vh;
+    background: #F9F9F9;
+    display:grid;
+    place-items: center;
+    overflow: hidden;
+}
+.upload .mainBody{
+    width: 97.6rem;
+    height: 54.9rem;
+    background: #FFFFFF;
+    border-radius: 1rem;
+    position: relative;
+    top: 3.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.upload .mainBody .buttonContainer{
+        width: 90.0rem;
+        height: 7.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+ }
+ .upload .mainBody .buttonContainer button{
+    width: 25rem;
+    height: 7.8rem;
+    color: #FFFFFF;
+    text-shadow: 0 0.4rem 0.4rem #0000004d;
+    background: red;
+    margin-top: 2.8rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0.4rem 1.5rem #0000004d;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2rem;
+
+ }
+ .upload .mainBody .buttonContainer button:nth-child(1){
+    background: #BE1717;
+ }
+ .upload .mainBody .buttonContainer button:nth-child(2){
+     background: #52B6CC;
+}
+.upload .mainBody .buttonContainer button:nth-child(3){
+     background: #8E6D6D;
+}
+
+/* UPLOAD COMPNENT STYLE */
+
+.imageUploadArea{
+    width: 90rem;
+    height: 31.8rem;
+    background: #FFFFFF;
+    box-shadow: 0 0.4rem 2.5rem #0000004d;
+    display: flex;
+}
+ .imageUploadArea .leftSide{
+    width: 50%;
+    height: 100%;
+ }
+ .imageUploadArea .leftSide .uploadInput{
+    width: 43.6rem;
+    height: 28.2rem;
+    border: 0.3rem dashed #2AB1DC;
+    border-radius: 2rem;
+    margin: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .imageUploadArea .leftSide .uploadInput img{
+      width: 33.236rem;
+      height: 19.2rem;
+
+  }
+ .imageUploadArea .rightSide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.4rem;
+    padding-bottom: 3.8rem;
+ }
+ .imageUploadArea .rightSide .documentDetails{
+     width: 39.4rem;
+     height: 7rem;
+     border-radius: 2rem;
+     background: #23b0db4d;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     padding-left: 1.7rem;
+     color: #FFFFFF;
+     font-size: 1.5rem;
+     letter-spacing: 0.5rem;
+ }
+ .imageUploadArea .rightSide .documentDetails .icon img{
+     width: 4.3rem;
+     height: 2.6rem;
+    margin-right: 2.1rem;
+ }
+ .imageUploadArea .rightSide .note{
+    width: 39.2rem;
+    height: 8rem;
+    border-radius: 1.5rem;
+    background: #F9F9F9;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    color: #7D7D7D;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  .imageUploadArea .rightSide .uploadBtn{
+      width: 100%;
+      margin-left: 5rem;
+      text-align: left;
+  }
+  .imageUploadArea .rightSide .uploadBtn button{
+    width: 20.9rem;
+    height: 5rem;
+    background: #ABD7E0;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    border: none;
+    outline: none;
+  }
+
+  /* END OF IMAGE UPLOAD STYLING */
+
+  .pdfUploadArea{
+    width: 90rem;
+    height: 31.8rem;
+    background: #FFFFFF;
+    box-shadow: 0 0.4rem 2.5rem #0000004d;
+    display: flex;
+}
+ .pdfUploadArea .leftSide{
+    width: 50%;
+    height: 100%;
+ }
+ .pdfUploadArea .leftSide .uploadInput{
+    width: 43.6rem;
+    height: 28.2rem;
+    border: 0.3rem dashed #BE1717;
+    border-radius: 2rem;
+    margin: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pdfUploadArea .leftSide .uploadInput img{
+      width: 33.236rem;
+      height: 19.2rem;
+
+  }
+ .pdfUploadArea .rightSide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.4rem;
+    padding-bottom: 3.8rem;
+ }
+ .pdfUploadArea .rightSide .documentDetails{
+     width: 39.4rem;
+     height: 7rem;
+     border-radius: 2rem;
+     background: #be171759;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     padding-left: 1.7rem;
+     color: #FFFFFF;
+     font-size: 1.5rem;
+     letter-spacing: 0.5rem;
+ }
+ .pdfUploadArea .rightSide .documentDetails .icon img{
+     width: 4.3rem;
+     height: 2.6rem;
+    margin-right: 2.1rem;
+ }
+ .pdfUploadArea .rightSide .note{
+    width: 39.2rem;
+    height: 8rem;
+    border-radius: 1.5rem;
+    background: #F9F9F9;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    color: #7D7D7D;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+  }
+  .pdfUploadArea .rightSide .uploadBtn{
+      width: 100%;
+      margin-left: 5rem;
+      text-align: left;
+  }
+  .pdfUploadArea .rightSide .uploadBtn button{
+    width: 20.9rem;
+    height: 5rem;
+    background: #E0ABAB;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    border: none;
+    outline: none;
+  }
+
+
+
+
+
+
+
+
+  /* END OF PDF UPLOAD STYLING */
+
+
+  .videoUploadArea{
+    width: 90rem;
+    height: 31.8rem;
+    background: #FFFFFF;
+    box-shadow: 0 0.4rem 2.5rem #0000004d;
+    display: flex;
+}
+ .videoUploadArea .leftSide{
+    width: 50%;
+    height: 100%;
+ }
+ .videoUploadArea .leftSide .uploadInput{
+    width: 43.6rem;
+    height: 100%;
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .videoUploadArea .leftSide .uploadInput img{
+      width: 33.236rem;
+      height: 19.2rem;
+
+  }
+ .videoUploadArea .rightSide{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.4rem;
+    padding-bottom: 3.8rem;
+ }
+ .videoUploadArea .rightSide  .inputForFileName input{
+        width: 35rem;
+        height: 4.2rem;
+        border: none;
+        border-bottom: 0.2rem solid #8E6D6D;
+        outline: none;
+        padding-right: 3rem;
+
+    }
+    .videoUploadArea .rightSide  .inputForFileName input::placeholder{
+        color: #8E6D6D;
+        font-weight: bold;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    .videoUploadArea .rightSide  .inputForFileName img{
+        width: 2.4rem;
+        height: 2.5rem;
+        position: relative;
+        left: -3rem;
+
+    }
+ .videoUploadArea .rightSide .note{
+    width: 35rem;
+    height: 7rem;
+    border-radius: 1.5rem;
+    background: #F9F9F9;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    color: #7D7D7D;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-left: -3rem;
+  }
+  .videoUploadArea .rightSide  .inputForFileLink input{
+    width: 35rem;
+    height: 4.2rem;
+    border: none;
+    border-bottom: 0.2rem solid #8E6D6D;
+    outline: none;
+    padding-right: 3rem;
+}
+.videoUploadArea .rightSide  .inputForFileLink input::placeholder{
+    color: #8E6D6D;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+.videoUploadArea .rightSide  .inputForFileLink img{
+    width: 2.4rem;
+    height: 2.5rem;
+    position: relative;
+    left: -3rem;
+    
+}
+  .videoUploadArea .rightSide .uploadBtn{
+      width: 100%;
+      margin-left: 7.5rem;
+      text-align: left;
+      margin-top: 1.9rem;
+  }
+  .videoUploadArea .rightSide .uploadBtn button{
+    width: 20.9rem;
+    height:5rem;
+    background: #E0ABAB;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    border: none;
+    outline: none;
+  }
+
+  /* END OF VIDEO UPLOAD STYLING */
+
+  .emptyUpload{
+    width: 90rem;
+    height: 31.8rem;
+    background: #FFFFFF;
+    box-shadow: 0 0.4rem 2.5rem #0000004d;
+    display: grid;
+    place-items: center;
+}
+.emptyUpload img{
+    width: 50rem;
+    height: 20rem;
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+    .upload{
+        width: 100VW;
+        height: 100vh;
+        background: #F9F9F9;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .upload .mainBody{
+        width: calc(100% - 0%);
+        height: calc(100vh - 20rem);
+        background: #FFFFFF;
+        border-radius: 1rem;
+        position: relative;
+        top: 3.8rem;
+        box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .upload .mainBody .buttonContainer{
+        width: 90.0rem;
+        height: 7.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ }
+ .upload .mainBody .buttonContainer button{
+    width: 15rem;
+    min-height: 7.8rem;
+    color: #FFFFFF;
+    text-shadow: 0 0.4rem 0.4rem #0000004d;
+    background: red;
+    margin-top: 2.8rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0.4rem 1.5rem #0000004d;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.2rem;
+
+ }
+
+ /*  for PDF file*/
+
+ .pdfUploadArea{
+    width: 90rem;
+    height: 31.8rem;
+    background: #FFFFFF;
+    box-shadow: 0 0.4rem 2.5rem #0000004d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.pdfUploadArea .rightSide .documentDetails{
+    margin-bottom: 2rem;
+}
+.pdfUploadArea .rightSide .note{
+    margin-bottom: 2rem;
+ }
+
+  /*  for IMAGE file*/
+
+  .imageUploadArea{
+    width: 90rem;
+    height: 31.8rem;
+    background: #FFFFFF;
+    box-shadow: 0 0.4rem 2.5rem #0000004d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.imageUploadArea .rightSide .documentDetails{
+    margin-bottom: 2rem;
+}
+.imageUploadArea .rightSide .note{
+    margin-bottom: 2rem;
+ }
+
+   /*  for VIDEO file*/
+
+   .videoUploadArea{
+    width: 90rem;
+    height: 31.8rem;
+    background: #FFFFFF;
+    box-shadow: 0 0.4rem 2.5rem #0000004d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.videoUploadArea .rightSide .documentDetails{
+    margin-bottom: 2rem;
+}
+.videoUploadArea .rightSide .note{
+    margin-bottom: 2rem;
+ }
+}

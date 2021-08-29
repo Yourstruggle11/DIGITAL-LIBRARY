@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+
+
+
+
+
+.home{
+    width: 100VW;
+    height: 100vh;
+    background: #F9E8D6;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .pdfBox{
+    width: 32.5rem;
+    height: 40.8rem;
+    background: #C4C4C4;
+    box-shadow: 1.5rem 0 2.5rem #00000056,
+                inset 2rem 2rem 1.5rem #00000056;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+}
+.home .pdfBox .pdfInsideBox{
+    width: 24.9rem;
+    height: 33.8rem;
+    background: linear-gradient(#25B0DC, #F9F9F9);
+    box-shadow: 5rem 0.4 1.5rem #00000056;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+ }
+ .home .pdfBox .pdfInsideBox:hover{
+     transform: translateY(-5rem);
+     box-shadow: 0 4rem 7rem rgba(0,0,0,0.5);
+ }
+ .home .pdfBox .pdfInsideBox button{
+     width: 17.1rem;
+     height: 5.6rem;
+     border-radius: 3rem;
+     background: #C4C4C4;
+     color: #ffffff;
+     border: none;
+     outline: none;
+     margin-top: 2.3rem;
+     cursor: pointer;
+ }
+
+
+ .home .imageBox{
+    width: 32.5rem;
+    height: 40.8rem;
+    background: #C4C4C4;
+    box-shadow: 1.5rem 0 2.5rem #00000056,
+                inset 2rem 2rem 1.5rem #00000056;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10rem;
+
+}
+.home .imageBox .imageInsideBox{
+    width: 24.9rem;
+    height: 33.8rem;
+    background: linear-gradient(#25B0DC, #F9F9F9);
+    box-shadow: 5rem 0.4 1.5rem #00000056;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+ }
+ .home .imageBox .imageInsideBox:hover{
+    transform: translateY(-5rem);
+    box-shadow: 0 4rem 7rem rgba(0,0,0,0.5);
+}
+ .home .imageBox .imageInsideBox button{
+     width: 17.1rem;
+     height: 5.6rem;
+     border-radius: 3rem;
+     background: #C4C4C4;
+     color: #ffffff;
+     border: none;
+     outline: none;
+     margin-top: 2.3rem;
+     cursor: pointer;
+ }
+
+
+ .home .videoBox{
+    width: 32.5rem;
+    height: 40.8rem;
+    background: #C4C4C4;
+    box-shadow: 1.5rem 0 2.5rem #00000056,
+                inset 2rem 2rem 1.5rem #00000056;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.home .videoBox .videoInsideBox{
+    width: 24.9rem;
+    height: 33.8rem;
+    background: linear-gradient(#25B0DC, #F9F9F9);
+    box-shadow: 5rem 0.4 1.5rem #00000056;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s; 
+ }
+ .home .videoBox .videoInsideBox:hover{
+    transform: translateY(-5rem);
+    box-shadow: 0 4rem 7rem rgba(0,0,0,0.5);
+}
+ .home .videoBox .videoInsideBox button{
+     width: 17.1rem;
+     height: 5.6rem;
+     border-radius: 3rem;
+     background: #C4C4C4;
+     color: #ffffff;
+     border: none;
+     outline: none;
+     margin-top: 2.3rem;
+     cursor: pointer;
+ }
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+
+.home{
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20rem;
+    overflow-x: hidden;
+}
+.pdfBox{
+    margin-bottom: 10rem;
+    margin-right: 0rem !important;
+}
+.imageBox{
+    margin-bottom: 10rem;
+    margin-right: 0rem !important;
+}
+    
+ 
+}

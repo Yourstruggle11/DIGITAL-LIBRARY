@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+
+
+
+
+
+.aboutUs{
+    width: 100VW;
+    height: 100vh;
+    background: #7c90b3;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+.aboutUs .mainBody{
+    width: 57rem;
+    height: 41.1rem !important;
+    background: #1a1a1a5d;
+    /* border-radius: 1rem; */
+    /* box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.aboutUs .mainBody img{
+    width: 42rem;
+    height: 56rem;
+    position: absolute;
+    z-index: 5;
+    top: 10rem;
+}
+.rightDescribtion{
+    width: 57rem;
+    height: 56.8rem;
+    background: #ffffff;
+    padding: 3rem 6rem;
+}
+.rightDescribtion h4{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.25rem;
+    margin: 0;
+}
+ .rightDescribtion h1{
+    font-size: 5.9375rem;
+    font-family: Lalezar;
+    line-height: 0.8;
+    margin: 10px 0 0;
+ }
+ .rightDescribtion p{
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 34px 0 0;
+  }
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+
+    .aboutUs{
+        width: 100VW;
+        height: 100vh;
+        background: #7c90b3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-end;
+        overflow: hidden;
+        padding-bottom: 0rem;
+    }
+    .aboutUs .mainBody{
+        width: 57rem;
+        height: 41.1rem !important;
+        background: #1a1a1a5d;
+        /* border-radius: 1rem; */
+        /* box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden !important;
+    }
+    .aboutUs .mainBody img{
+        width: 42rem;
+        height: 56rem;
+        position: relative;
+        z-index: 0;
+        top: 10rem;
+    }
+
+ 
+}

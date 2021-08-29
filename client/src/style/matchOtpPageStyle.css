@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+
+
+
+
+
+.matchOtp{
+    width: 100VW;
+    height: 100vh;
+    background: #F9F9F9;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.matchOtp .mainBody{
+    width: 60rem;
+    height: 55rem;
+    position: relative;
+    top: 5rem;
+    background: #FFFFFF;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.4rem 2.4rem #00000036;
+    padding-left: 4.2rem;
+    padding-top:2.6rem ;
+}
+.matchOtp .mainBody h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    color:"#000000";
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.matchOtp .mainBody p{
+    width: 45rem;
+    color:"#000000";
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+.matchOtp .mainBody .emailChangeBtn{
+ cursor: pointer;
+ transition: all 0.5s;
+ }
+ .matchOtp .mainBody .emailChangeBtn:hover{
+     width: 20rem;
+    /*height: 8.2rem; */
+    background: #29B1DC;
+    border-radius: 1rem;
+    color: #FFFFFF;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+ }
+.matchOtp .mainBody .input{
+    width: 100%;
+    margin-top: 4.7rem;
+}
+.matchOtp .mainBody .input input{
+    width: 48.8rem;
+    height:8.2rem;
+    border: 0.1rem solid #000000;
+    border-radius: 1rem;
+    padding-left: 2rem;
+    font-size: 2.5rem;
+    outline: none;
+}
+.matchOtp .mainBody .input input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    color: #7D7D7D;
+
+}
+.matchOtp .mainBody button{
+    width: 48.8rem;
+    height: 8.2rem;
+    background: #29B1DC;
+    border-radius: 5rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    margin-top: 6.1rem;
+}
+.matchOtp .mainBody p{
+    color: #000000;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+
+    .matchOtp .mainBody{
+        max-width: 60rem;
+        height: 55rem;
+        position: relative;
+        top: 5rem;
+        left: -2rem;
+        background: transparent;
+        border-radius: 1rem;
+        box-shadow: none;
+        padding-left: 4.2rem;
+        padding-top:2.6rem ;
+    }
+
+    .matchOtp .mainBody .input{
+        width: 100%;
+        margin-top: 4.7rem;
+    }
+    .matchOtp .mainBody .input input{
+        width: 45rem;
+
+    }
+    .matchOtp .mainBody button{
+        width: 45rem;
+        
+    }
+ 
+}

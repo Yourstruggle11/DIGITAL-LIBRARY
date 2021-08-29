@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+.adminSignUp{
+    width: 100VW;
+    height: 100vh;
+    background: #F9F9F9;
+    display:grid;
+    place-items: center;
+    overflow: hidden;
+}
+.adminSignUp .mainBody{
+    width: 97.6rem;
+    height: 54.9rem;
+    background: #FFFFFF;
+    border-radius: 1rem;
+    position: relative;
+    top: 3.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adminSignUp .mainBody .leftSide{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(#d9741585, #15AAD9);
+    display: grid;
+    place-items: center;
+}
+.adminSignUp .mainBody .leftSide .circleOne{
+    width: 41.9rem;
+    height: 41.9rem;
+    border-radius: 100%;
+    background: #d974154b;
+    display: grid;
+    place-items: center;
+ }
+ .adminSignUp .mainBody .leftSide .circleOne .circleTwo{
+    width: 31.2rem;
+    height: 31.2rem;
+    border-radius: 100%;
+    background: #d974154b;
+    display: grid;
+    place-items: center;
+ }
+ .adminSignUp .mainBody .leftSide .circleOne .circleTwo img{
+     width: 32.10rem;
+     height: 16.6rem;
+ }
+ .adminSignUp .mainBody .rightSide{
+    width: 50%;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.adminSignUp .mainBody .rightSide .header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+ } 
+ .adminSignUp .mainBody .rightSide .buttons{
+     width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .adminSignUp .mainBody .rightSide .body{
+    width: 100%;
+    padding: 2rem;
+
+ }
+ .adminSignUp .mainBody .rightSide .body .inputArea{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+   .adminSignUp .mainBody .rightSide .body .inputArea .userName{
+       width: 3.2rem;
+       height: 3.2rem;
+       position: absolute;
+       right: 3rem;
+   }
+   .adminSignUp .mainBody .rightSide .body .inputArea .email{
+    width: 3.2rem;
+    position: absolute;
+    right: 3rem;
+    top: 7rem;
+}
+.adminSignUp .mainBody .rightSide .body .inputArea .password{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 3rem;
+    top: 14rem;
+
+}
+  .adminSignUp .mainBody .rightSide .body .inputArea input{
+    margin-bottom: 3.4rem;
+    height: 3.7rem;
+    border: none;
+    outline: none;
+    border-bottom: 0.1rem solid #15AAD9;
+  }
+
+  .adminSignUp .mainBody .rightSide .body .inputArea .userNameInput::placeholder, .emailInput::placeholder{
+    color: #D97315;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+  }
+  .adminSignUp .mainBody .rightSide .body .inputArea .passwordInput::placeholder{
+    color: #B9B9B9;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+  }
+  .adminSignUp .mainBody .rightSide .buttom{
+      margin:auto;
+      text-align: center;
+  }
+  .adminSignUp .mainBody .rightSide .buttom button{
+    width: 40.2rem;
+    height: 6.8rem;
+    border-radius: 1rem;
+    background: linear-gradient(120deg, #15AAD9, #d9741579);
+    border: none;
+    outline: none;
+    box-shadow: 0 1rem 2rem #31b3de7a;
+    color: #F6F6F6;
+    font-size: 2rem;
+    transition: all 0.2s;
+    position: relative;
+    top: -2rem;
+  }
+  .adminSignUp .mainBody .rightSide .buttom button:hover{
+    position: relative;
+    top: 0.1rem;
+  }
+  .alert{
+     width: 100%;
+     height: 100%;
+     padding: 1rem;
+     background: rgba(177, 53, 53, 0.548);
+     border: 0.2rem solid rgb(189, 178, 178);
+     font-size: 1rem;
+     font-weight: bold;
+     color: white;
+     font-family: 'Roboto', sans-serif;
+     text-align: center;
+     border-radius: 1rem;
+     position: relative;
+     top: -2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+
+    .adminSignUp .mainBody{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .adminSignUp .mainBody .leftSide{
+        display: none;
+    }
+}

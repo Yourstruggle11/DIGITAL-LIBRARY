@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+
+/* FOR NAV BAR */
+.responsive{
+    margin-top: 9.3rem;
+}
+.NavBar{
+    width: 100%;
+    height: 9.3rem;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10.1rem;
+    padding-right: 5.8rem;
+    position: fixed;
+    z-index: 5;
+}
+.NavBar > .logo{
+    color: #7D7D7D;
+    font-weight:900;
+    font-size: 2rem;
+}
+.NavBar > .logo > .span{
+    color: #23AFDB;
+}
+.toggleIcon{
+    display: none;
+    cursor: pointer;
+}
+.NavBar .navigation{
+    display: flex;
+}
+.NavBar .navigation ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+}
+.NavBar .navigation ul li{
+    display: inline-block;
+    margin-right: 6rem;
+    color: #828282;
+    font-size: 1.9rem;
+}
+.NavBar .navigation .signInBtn{
+    width: 17.1rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background: linear-gradient(120deg, #15AAD9, #15abd988);
+    border: none;
+    outline: none;
+    box-shadow: 0rem 1rem 2rem #31b3de8e;
+    font-weight:bold;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #F6F6F6;
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ .NavBar .navigation .signInBtn:hover{
+     position: relative;
+     top: 0.5rem;
+ }
+/* ENDING OF NAV BAR */
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+@media(max-width:778px){
+    html{
+        font-size: 45%;
+    }
+}
+@media(max-width:480px){
+    .toggleIcon{
+        display: block;
+        cursor: pointer;
+    
+    }
+    .NavBar .navigation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 2rem;
+        height: 9.3rem;
+        top: -9.3rem;
+        background: #ffffff;
+        transition: all 0.5s;
+    }
+
+}
+
+
+@media(max-width:360px){
+    html{
+        font-size: 45%;
+    }
+
+            /* FOR NAV BAR */
+.NavBar{
+    width: 100%;
+    height: 9.3rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10.1rem;
+    padding-right: 5.8rem;
+    position: fixed;
+}
+.NavBar  .logo{
+    color: #7D7D7D;
+    font-weight:900;
+    font-size: 2rem;
+    margin-left: -5rem;
+}
+.NavBar  .logo  .span{
+    color: #23AFDB;
+}
+.toggleIcon{
+    display: block;
+    cursor: pointer;
+}
+.NavBar .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2rem;
+    height: 9.3rem;
+    top: -9.3rem;
+    background: #ffffff;
+    transition: all 0.5s;
+}
+.NavBar .navigation ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+}
+.NavBar .navigation ul li{
+    display: inline-block;
+    margin-right: 6rem;
+    color: #828282;
+    font-size: 1.4rem;
+}
+.NavBar .navigation .signInBtn{
+    width: 15.1rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: linear-gradient(120deg, #15AAD9, #15abd988);
+    border: none;
+    outline: none;
+    box-shadow: 0rem 1rem 2rem #31b3de8e;
+    font-weight:bold;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #F6F6F6;
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ .NavBar .navigation .signInBtn:hover{
+     position: relative;
+     top: 0.5rem;
+ }
+
+/* ENDING OF NAV BAR */
+
+
+
+
+}
+
+ /* @media(max-width:500px){
+    html{
+        font-size: 25%;
+    }
+
+
+}  */

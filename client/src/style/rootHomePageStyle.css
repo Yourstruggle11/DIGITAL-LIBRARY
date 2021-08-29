@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+
+
+
+
+
+
+/* STARTING OF ROOT HOME PAGE */
+.rootHome{
+    width: 100VW;
+    height: 100vh;
+    background: #F9F9F9;
+    display:grid;
+    place-items: center;
+    overflow: hidden;
+}
+.rootHome .mainBody{
+    width: 97.6rem;
+    height: 54.9rem;
+    background: #D1E1DD;
+    border-radius: 1rem;
+    position: relative;
+    top: 3.8rem;
+    border: 0.5rem solid white;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+    display: flex;
+}
+.rootHome .mainBody .leftSide{
+    width: 62.4rem;
+    height: 54.7rem;
+    border-radius: 1rem 3rem 3rem 1rem;
+ }
+ .rootHome .mainBody .leftSide .readArea{
+    display: flex;
+ }
+ .rootHome .mainBody .leftSide .adminAcArea{
+    display: flex;
+}
+.rootHome .mainBody .leftSide .readArea .readSvg{
+     background: #D1E1DD;
+     width: 31.3rem;
+     height: 25.7rem;
+     position: relative;
+     left: -0.45rem;
+     top: -0.45rem;
+     border-radius: 1rem 0 0 0;
+     display: grid;
+     place-items: center;
+ }
+ .rootHome .mainBody .leftSide .readArea .readSvg .svgBackground{
+    width: 19.516rem;
+    height: 16.024rem;
+    transform: rotate(45.4deg);
+    background: #E0F0EC;
+  }
+  .rootHome .mainBody .leftSide .readArea .readSvg .svgBackground img{
+      width: 24.7rem;
+      height: 17.1rem;
+      transform: rotate(-45.4deg);
+      position: relative;
+      top: 2.5rem;
+  }
+ .rootHome .mainBody .leftSide .readArea .readBtn{
+     background: #ffffff;
+     width: 31.4rem;
+     height: 25.7rem;
+     position: relative;
+     left: -0.45rem;
+     top: -0.45rem;
+     border-radius: 0 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .rootHome .mainBody .leftSide .readArea .readBtn p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    text-align:center !important;
+    letter-spacing: 0.2rem;
+    margin-bottom: 3rem;
+ }
+ .rootHome .mainBody .leftSide .readArea .readBtn .readNowBtn{
+    width: 20.6rem;
+    height: 5.2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #15AAD9, #E0F0EC);
+    border: none;
+    outline: none;
+    box-shadow: 0rem 1rem 2rem #31b3de8e;
+    font-weight:bold;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #F6F6F6;
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ .rootHome .mainBody .leftSide .readArea .readBtn .readNowBtn:hover{
+    position: relative;
+    top: 0.5rem;
+  }
+ .rootHome .mainBody .leftSide .adminAcArea .adminAcBtn{
+    background: #ffffff;
+    width: 31.4rem;
+    height: 28.7rem;
+    position: relative;
+    left: -0.45rem;
+    top: -0.45rem;
+    border-radius: 0 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rootHome .mainBody .leftSide .adminAcArea .adminAcBtn p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    text-align:center !important;
+    letter-spacing: 0.2rem;
+    margin-bottom: 3rem;
+}
+.rootHome .mainBody .leftSide .adminAcArea .adminAcBtn .adminAcCreateBtn{
+    width: 20.6rem;
+    height: 5.2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #15AAD9, #E0F0EC);
+    border: none;
+    outline: none;
+    box-shadow: 0rem 1rem 2rem #31b3de8e;
+    font-weight:bold;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #F6F6F6;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+ .adminAcCreateBtn:hover{
+    position: relative;
+    top: 0.5rem;
+ }
+.rootHome .mainBody .leftSide .adminAcArea .adminAcSvg{
+     background: #D1E1DD;
+     width: 31.3rem;
+     height: 28.7rem;
+     position: relative;
+     left: -0.45rem;
+     top: -0.45rem;
+     border-radius: 0 0 3rem 0;
+     display: grid;
+     place-items: center;
+ }
+ .rootHome .mainBody .leftSide .adminAcArea .adminAcSvg .svgBackground{
+    width: 19.516rem;
+    height: 16.024rem;
+    transform: rotate(45.4deg);
+    background: #E0F0EC;
+ }
+ .rootHome .mainBody .leftSide .adminAcArea .adminAcSvg .svgBackground img{
+    width: 24.7rem;
+    height: 17.1rem;
+    transform: rotate(-45.4deg);
+    position: relative;
+    left: -5rem;    
+    top: 2.5rem;
+ }
+ .rootHome .mainBody .rightSide{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 3rem;
+     margin-top: 3.1rem;
+ }
+ .rootHome .mainBody .rightSide h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #7D7D7D;
+ }
+ .rootHome .mainBody .rightSide h2 .span{
+    color: #23AFDB;
+  }
+  .rootHome .mainBody .rightSide img{
+      width: 28.037rem;
+      height: 27.144rem;
+      transform: rotate(-30.59deg);
+      position: relative;
+      left: -10.8rem;
+  }
+  .rootHome .mainBody .rightSide p{
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.233);
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+  }
+
+/* ENDING OF ROOT HOME PAGE */
+
+
+
+
+
+
+
+
+/* RESPONSIVE CODE STRT HERE */
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+
+
+    .rootHome{
+        width: 100VW;
+        height: 100vh;
+        background: #F9F9F9;
+        display:grid;
+        place-items: center;
+        overflow: scroll;
+        overflow-x: hidden !important;
+    }
+    .rootHome .mainBody{
+        width: 62.4rem;
+        min-height: 80rem;
+        background: #ffffff;
+        border-radius: 1rem 3rem 3rem 1rem;
+        position: relative;
+        top: 3.8rem;
+        border: 0.5rem solid white;
+        box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.295);
+        display: flex;
+        overflow-y: auto;
+        margin-left: -4rem;
+    }
+    .rootHome .mainBody::-webkit-scrollbar{
+        width: 0;
+    }
+    .rootHome .mainBody .leftSide{
+        width: 62.4rem;
+        height: 54.7rem;
+        border-radius: 1rem 3rem 3rem 1rem;
+        display: grid;
+        place-items: center;
+     }
+     .rootHome .mainBody .leftSide .readArea{
+        display: flex;
+        flex-direction: column;
+     }
+     .rootHome .mainBody .leftSide .adminAcArea{
+        display: flex;
+        flex-direction: column;
+    }
+    .rootHome .mainBody .leftSide .readArea .readSvg{
+         background: #D1E1DD;
+         width: 31.3rem;
+         height: 25.7rem;
+         position: relative;
+         left: -0.45rem;
+         top: -0.45rem;
+         border-radius: 1rem 0 0 0;
+         display: grid;
+         place-items: center;
+     }
+     .rootHome .mainBody .leftSide .readArea .readSvg .svgBackground{
+        width: 19.516rem;
+        height: 16.024rem;
+        transform: rotate(45.4deg);
+        background: #E0F0EC;
+      }
+      .rootHome .mainBody .leftSide .readArea .readSvg .svgBackground img{
+          width: 24.7rem;
+          height: 17.1rem;
+          transform: rotate(-45.4deg);
+          position: relative;
+          top: 2.5rem;
+      }
+     .rootHome .mainBody .leftSide .readArea .readBtn{
+         background: #ffffff;
+         width: 31.4rem;
+         height: 25.7rem;
+         position: relative;
+         left: -0.45rem;
+         top: -0.45rem;
+         border-radius: 0 3rem 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+     .rootHome .mainBody .leftSide .readArea .readBtn p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.7rem;
+        text-align:center !important;
+        letter-spacing: 0.2rem;
+        margin-bottom: 3rem;
+     }
+     .rootHome .mainBody .leftSide .readArea .readBtn .readNowBtn{
+        width: 20.6rem;
+        height: 5.2rem;
+        border-radius: 1rem;
+        background: linear-gradient(to right, #15AAD9, #E0F0EC);
+        border: none;
+        outline: none;
+        box-shadow: 0rem 1rem 2rem #31b3de8e;
+        font-weight:bold;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        color: #F6F6F6;
+        cursor: pointer;
+        transition: all 0.5s;
+     }
+     .rootHome .mainBody .leftSide .readArea .readBtn .readNowBtn:hover{
+        position: relative;
+        top: 0.5rem;
+      }
+     .rootHome .mainBody .leftSide .adminAcArea .adminAcBtn{
+        background: #ffffff;
+        width: 31.4rem;
+        height: 28.7rem;
+        position: relative;
+        left: -0.45rem;
+        top: -0.45rem;
+        border-radius: 0 0 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+    }
+    .rootHome .mainBody .leftSide .adminAcArea .adminAcBtn p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.7rem;
+        text-align:center !important;
+        letter-spacing: 0.2rem;
+        margin-bottom: 3rem;
+    }
+    .rootHome .mainBody .leftSide .adminAcArea .adminAcBtn .adminAcCreateBtn{
+        width: 20.6rem;
+        height: 5.2rem;
+        border-radius: 1rem;
+        background: linear-gradient(to right, #15AAD9, #E0F0EC);
+        border: none;
+        outline: none;
+        box-shadow: 0rem 1rem 2rem #31b3de8e;
+        font-weight:bold;
+        font-size: 2rem;
+        font-family: 'Poppins', sans-serif;
+        color: #F6F6F6;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+     .adminAcCreateBtn:hover{
+        position: relative;
+        top: 0.5rem;
+     }
+    .rootHome .mainBody .leftSide .adminAcArea .adminAcSvg{
+         background: #D1E1DD;
+         width: 31.3rem;
+         height: 28.7rem;
+         position: relative;
+         left: -0.45rem;
+         top: -0.45rem;
+         border-radius: 0 0 3rem 0;
+         display: grid;
+         place-items: center;
+     }
+     .rootHome .mainBody .leftSide .adminAcArea .adminAcSvg .svgBackground{
+        width: 19.516rem;
+        height: 16.024rem;
+        transform: rotate(45.4deg);
+        background: #E0F0EC;
+     }
+     .rootHome .mainBody .leftSide .adminAcArea .adminAcSvg .svgBackground img{
+        width: 24.7rem;
+        height: 17.1rem;
+        transform: rotate(-45.4deg);
+        position: relative;
+        left: -5rem;    
+        top: 2.5rem;
+     }
+     .rootHome .mainBody .rightSide{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         margin-bottom: 3rem;
+         margin-top: 3.1rem;
+         display: none;
+     }
+     .rootHome .mainBody .rightSide h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        color: #7D7D7D;
+     }
+     .rootHome .mainBody .rightSide h2 .span{
+        color: #23AFDB;
+      }
+      .rootHome .mainBody .rightSide img{
+          width: 28.037rem;
+          height: 27.144rem;
+          transform: rotate(-30.59deg);
+          position: relative;
+          left: -10.8rem;
+      }
+      .rootHome .mainBody .rightSide p{
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        text-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.233);
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+      }
+}
