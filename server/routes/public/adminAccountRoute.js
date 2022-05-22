@@ -5,7 +5,7 @@ import {
     getAdmin,
     deleteAdmin,
     accountActivation
-} from '../controller/adminAccountController.js'
+} from '../../controller/adminAccountController.js'
 const route = express.Router()
 
 route.post('/signup', registerAdmin)

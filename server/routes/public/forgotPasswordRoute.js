@@ -2,7 +2,7 @@ import express from 'express'
 import {
     updatePassword,
     sendRecoveryMail
-} from '../controller/forgotPasswordController.js'
+} from '../../controller/forgotPasswordController.js'
 
 const route = express.Router()
 

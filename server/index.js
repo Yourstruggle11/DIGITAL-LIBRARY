@@ -7,11 +7,9 @@ import bodyParser from 'body-parser'
 
 //import routes
 import homeRoute from './routes/homeRoute.js'
-import pdfAssetsRoute from './routes/pdfAssetsRoute.js'
-import imageAssetsRoute from './routes/imageAssetsRoute.js'
-import videoAssetsRoute from './routes/videoAssetsRoute.js'
-import adminAccount from './routes/adminAccountRoute.js'
-import forgotPassword from './routes/forgotPasswordRoute.js'
+import PublicRouter from './routes/public/index.js'
+import PrivateRouter from './routes/private/index.js'
+
 import { errorhandler, notFound } from './middlewares/errorHandler.js'
 
 const app = express()
@@ -28,17 +26,15 @@ app.use(cors())
 //connect to the database
 dbConnection()
 
-//routes
+
+
+// MAIN ROUTES
+
 app.use('/', homeRoute)
-app.use('/assets/pdf', pdfAssetsRoute)
-app.use('/assets/image', imageAssetsRoute)
-app.use('/assets/video', videoAssetsRoute)
+app.use('/public', PublicRouter)
+app.use('/private', PrivateRouter)
 
-//admin account route
-app.use('/admin', adminAccount)
 
-//forgot password route
-app.use('/admin/forgotpassword', forgotPassword)
 
 //For Error Handling
 app.use(notFound)
