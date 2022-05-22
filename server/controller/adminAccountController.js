@@ -1,5 +1,6 @@
 import adminAccount from '../model/adminAcSchema.js'
-import adminRegistrationMailer from "adminRegistrationMailer";
+import adminRegistrationMailer from "../mailer/adminRegistrationMailer.js";
+import isEmpty from "../utils/isEmpty.js";
 import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
 import env from 'dotenv'
@@ -57,12 +58,6 @@ export const loginAdmin = async (req, res, next) => {
             email: { $eq: email },
             status: { $eq: true }
         })
-        function isEmpty(obj) {
-            for (var key in obj) {
-                if (obj.hasOwnProperty(key)) return false
-            }
-            return true
-        }
         if (!isEmpty(checkActivation)) {
             const checkPassword = await bcrypt.compare(password, checkEmail.password)
             if (checkPassword) {
