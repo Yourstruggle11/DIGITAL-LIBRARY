@@ -1,5 +1,7 @@
 # DIGITAL-LIBRARY
 
+<img src="https://socialify.git.ci/Yourstruggle11/DIGITAL-LIBRARY/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Signal&pulls=1&stargazers=1&theme=Light" alt="DIGITAL-LIBRARY" width="640" height="320" />
+
 ## Digital library is a collection of documents in organized electronic form, available on the Internet, a user may be able to access Books, articles, Question paper, papers, images, and videos.
 
 # 1.1	Features: -
