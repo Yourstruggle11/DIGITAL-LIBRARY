@@ -1,5 +1,8 @@
 import axios from "axios";
 
+const API = process.env.REACT_APP_API
+
+
 export const pdfUpload = (adminName,adminId,fileName,Date,LINK,status) => async (dispatch) =>{
     try {
         dispatch({
@@ -9,7 +12,7 @@ export const pdfUpload = (adminName,adminId,fileName,Date,LINK,status) => async 
             "Content-type": "application/json",     
         }
         const {data} = await axios.post(
-            "https://digital-library-server.herokuapp.com/assets/pdf",
+            `${API}/assets/pdf`,
             {adminName,adminId,fileName,Date,LINK,status},
             config
         );
@@ -32,7 +35,7 @@ export const pdfShowToUser = () => async (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await axios.get(
-            "https://digital-library-server.herokuapp.com/assets/pdf/users",
+            `${API}/assets/pdf/users`,
             config
         );
         dispatch({

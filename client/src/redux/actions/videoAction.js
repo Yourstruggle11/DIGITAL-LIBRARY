@@ -1,5 +1,8 @@
 import axios from "axios";
 
+const API = process.env.REACT_APP_API
+
+
 export const videoUpload = (adminName,adminId,fileName,Date,LINK,status) => async (dispatch) =>{
     try {
         dispatch({
@@ -9,7 +12,7 @@ export const videoUpload = (adminName,adminId,fileName,Date,LINK,status) => asyn
             "Content-type": "application/json",    
         }
         const {data} = await axios.post(
-            "https://digital-library-server.herokuapp.com/assets/video",
+            `${API}/assets/video`,
             {adminName,adminId,fileName,Date,LINK,status},
             config
         );
@@ -31,7 +34,7 @@ export const videoShowToUser = () => async (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await axios.get(
-            "https://digital-library-server.herokuapp.com/assets/video/users",
+            `${API}/assets/video/users`,
             config
         );
         dispatch({

@@ -1,5 +1,9 @@
 import axios from "axios";
 
+
+const API = process.env.REACT_APP_API
+
+
 export const adminRegistration = (username, email, password) => async (dispatch) =>{
     try {
         dispatch({
@@ -9,7 +13,7 @@ export const adminRegistration = (username, email, password) => async (dispatch)
             "Content-type": "application/json",    
         }
         const {data} = await axios.post(
-                                        "https://digital-library-server.herokuapp.com/admin/signup" ,
+                                        `${API}/admin/signup` ,
                                         {username, email, password},
                                         config
                                         );
@@ -37,7 +41,7 @@ export const adminAccountActivation = (id) => async (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await axios.put(
-            `https://digital-library-server.herokuapp.com/admin/accountActivation/${id}`,
+            `${API}/admin/accountActivation/${id}`,
             config
         )
         dispatch({
@@ -54,7 +58,7 @@ export const adminAccountDelete = (id) => async (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await axios.delete(
-            `https://digital-library-server.herokuapp.com/admin/${id}`,
+            `${API}/admin/${id}`,
             config
         )
         dispatch({
@@ -75,7 +79,7 @@ export const adminLogin = (email, password) => async (dispatch) =>{
             "Content-type": "application/json",    
         }
         const { data } = await axios.post(
-            "https://digital-library-server.herokuapp.com/admin/login",
+            `${API}/admin/login`,
             {email,password},
             config,
 
@@ -116,7 +120,7 @@ export const adminLogout = () => (dispatch) => {
         }
 
         const {data} = await axios.get(
-            `https://digital-library-server.herokuapp.com/assets/pdf/admin/${id}`, 
+            `${API}/assets/pdf/admin/${id}`, 
             config)
         // console.log("data : ", data);
         dispatch({
@@ -138,7 +142,7 @@ export const adminLogout = () => (dispatch) => {
             }
     
             const {data} = await axios.get(
-                `https://digital-library-server.herokuapp.com/assets/image/admin/${id}`, 
+                `${API}/assets/image/admin/${id}`, 
                 config)
             // console.log("data : ", data);
             dispatch({
@@ -160,7 +164,7 @@ export const adminLogout = () => (dispatch) => {
                 }
         
                 const {data} = await axios.get(
-                    `https://digital-library-server.herokuapp.com/assets/video/admin/${id}`, 
+                    `${API}/assets/video/admin/${id}`, 
                     config)
                 //  console.log("data : ", data);
                 dispatch({

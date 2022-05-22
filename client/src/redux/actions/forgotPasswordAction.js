@@ -1,5 +1,11 @@
 import axios from "axios";
 
+
+const API = process.env.REACT_APP_API
+
+
+// const API = process.
+
 export const sendRecoveryEmail = (email) => async  (dispatch) =>{
     try {
         dispatch({
@@ -9,7 +15,7 @@ export const sendRecoveryEmail = (email) => async  (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await    axios.post(
-            "https://digital-library-server.herokuapp.com/admin/forgotpassword/sendmail" ,
+            `${API}/admin/forgotpassword/sendmail` ,
                                         {email},
                                         config
         )
@@ -36,7 +42,7 @@ export const updatePassword = (password,id) => async  (dispatch) =>{
             "Content-type": "application/json",    
         }
         const {data} = await    axios.put(
-            `https://digital-library-server.herokuapp.com/admin/forgotpassword/updatepassword/${id}` ,
+            `${API}/admin/forgotpassword/updatepassword/${id}` ,
                                         {password},
                                         config
         )
