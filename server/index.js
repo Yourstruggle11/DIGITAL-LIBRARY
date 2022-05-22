@@ -13,6 +13,7 @@ import imageAssetsRoute from "./routes/imageAssetsRoute.js"
 import videoAssetsRoute from "./routes/videoAssetsRoute.js"
 import adminAccount from './routes/adminAccountRoute.js'
 import forgotPassword from "./routes/forgotPasswordRoute.js"
+import { errorhandler, notFound } from "./middlewares/errorHandler.js";
 
 
 const app = express();
@@ -41,6 +42,11 @@ app.use("/admin", adminAccount)
 
 //forgot password route
 app.use("/admin/forgotpassword", forgotPassword)
+
+
+//For Error Handling
+app.use(notFound)
+app.use(errorhandler)
 
 
 
