@@ -1,38 +1,36 @@
-import mongoose from  "mongoose";
-import bcrypt from "bcrypt"
-const schema = mongoose.Schema;
+import mongoose from 'mongoose'
+import bcrypt from 'bcrypt'
+const schema = mongoose.Schema
 
 const adminAcSchema = new schema({
     username: {
         type: String,
         require: true,
-        trim: true,
-
+        trim: true
     },
     email: {
         type: String,
         required: true,
-        unique: true,
+        unique: true
     },
     password: {
         type: String,
-        required: true,
+        required: true
     },
-    status:{
+    status: {
         type: Boolean,
         default: false
     }
 })
 
-
 //encrypting the password before store into DB
-adminAcSchema.pre("save", async function (next){
-    if(!this.isModified("password")){
-        next();
+adminAcSchema.pre('save', async function (next) {
+    if (!this.isModified('password')) {
+        next()
     }
-    this.password = await bcrypt.hash(this.password, 10);
-});
+    this.password = await bcrypt.hash(this.password, 10)
+})
 
-const adminAccount = mongoose.model("adminAccount", adminAcSchema);
+const adminAccount = mongoose.model('adminAccount', adminAcSchema)
 
-export default adminAccount;
+export default adminAccount

@@ -1,4 +1,4 @@
-import express from "express";
+import express from 'express'
 import {
     getUserAssetsImage,
     getAdminAssetsImage,
@@ -6,16 +6,14 @@ import {
     postAssetsImage,
     updateAssetsImage,
     deleteAssetsImage
-} from "../controller/imageAssetsController.js"
-const route = express.Router();
+} from '../controller/imageAssetsController.js'
+const route = express.Router()
 
-route.get("/users", getUserAssetsImage)
-route.get("/admin/:id", getAdminAssetsImage)
-route.get("/superadmin", getSuperAdminAssetsImage)
-route.post("/", postAssetsImage)
-route.put("/:id", updateAssetsImage)
-route.delete("/:id", deleteAssetsImage)
+route.get('/users', getUserAssetsImage)
+route.get('/admin/:id', getAdminAssetsImage)
+route.get('/superadmin', getSuperAdminAssetsImage)
+route.post('/', postAssetsImage)
+route.put('/:id', updateAssetsImage)
+route.delete('/:id', deleteAssetsImage)
 
-
-
-export default route;
+export default route

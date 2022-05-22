@@ -1,12 +1,12 @@
-import express from "express";
-import {updatePassword,sendRecoveryMail} from "../controller/forgotPasswordController.js"
+import express from 'express'
+import {
+    updatePassword,
+    sendRecoveryMail
+} from '../controller/forgotPasswordController.js'
 
-const route = express.Router();
+const route = express.Router()
 
-route.post("/sendmail", sendRecoveryMail);
-route.put("/updatepassword/:id", updatePassword);
+route.post('/sendmail', sendRecoveryMail)
+route.put('/updatepassword/:id', updatePassword)
 
-
-
-
-export default route;
+export default route

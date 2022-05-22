@@ -1,10 +1,9 @@
-import  express  from "express";
+import express from 'express'
 
-const route = express.Router();
+const route = express.Router()
 
-
-route.get("/", function(req, res){
-    res.send("hello")
+route.get('/', function (req, res) {
+    res.send('hello')
 })
 
-export default route;
+export default route

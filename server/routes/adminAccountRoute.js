@@ -1,21 +1,17 @@
-import express from "express";
+import express from 'express'
 import {
     registerAdmin,
     loginAdmin,
     getAdmin,
     deleteAdmin,
     accountActivation
-} from "../controller/adminAccountController.js"
-const route = express.Router();
+} from '../controller/adminAccountController.js'
+const route = express.Router()
 
-route.post("/signup", registerAdmin)
-route.post("/login", loginAdmin)
-route.get("/", getAdmin)
-route.delete("/:id", deleteAdmin)
-route.put("/accountActivation/:id", accountActivation)
+route.post('/signup', registerAdmin)
+route.post('/login', loginAdmin)
+route.get('/', getAdmin)
+route.delete('/:id', deleteAdmin)
+route.put('/accountActivation/:id', accountActivation)
 
-
-
-
-
-export default route;
+export default route
